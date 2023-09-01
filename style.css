@@ -1,0 +1,75 @@
+html, body {
+    background-color: #232020;
+}
+  
+header {
+    font-family: 'Cardo', serif;
+    font-family: 'Nabla', cursive;
+    margin-top: 5vh;
+    color: #ff7315;
+    text-align: center;
+    font-size: 3em;
+}
+span{
+    color: red;
+}
+  
+#instructions {
+    color:white
+}
+  
+.instruction {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+  
+.plus {
+    background-color: red;
+    text-align: center;
+}
+  
+.moins {
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+}
+  
+.fini {
+    background-color : green;
+    text-align: center;
+}
+
+.col{
+    margin-top: 5vh;
+    background-color: wheat;
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+input{
+    height: 3vh;
+    width: 60%;
+    text-align: center;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+button {
+    height: 3vh;
+    background-color: #007BFF;
+    color: white;
+    width: 20%; /* Ajustez la largeur du bouton selon vos préférences */
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}

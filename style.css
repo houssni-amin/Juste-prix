@@ -5,15 +5,16 @@ html, body {
 header {
     font-family: 'Cardo', serif;
     font-family: 'Nabla', cursive;
-    margin-top: 5vh;
+    margin-top: 4vh;
     color: #ff7315;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
+
 span{
-    color: red;
+    cursor: pointer;
 }
-  
+
 #instructions {
     color:white
 }
@@ -39,8 +40,13 @@ span{
     text-align: center;
 }
 
+.rejouer{
+    background-color : green;
+    text-align: center;
+    font-size: 30px;
+}
+
 .col{
-    margin-top: 5vh;
     background-color: wheat;
     height: 10vh;
     width: 90%;
@@ -51,25 +57,48 @@ span{
     border-radius: 5px;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    min-height: 85px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+} 
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+small{
+    color: red;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    width: 60%;
+    min-height: 75px;
 }
 
 input{
-    height: 3vh;
-    width: 60%;
+    height: 5vh;
+    width: 100%;
     text-align: center;
-    border: none;
-    margin-right: 10px;
     border-radius: 5px;
     font-size: 100%;
+    min-height: 2em;
 }
 
 button {
-    height: 3vh;
+    height: 5vh;
     background-color: #007BFF;
     color: white;
     width: 20%; /* Ajustez la largeur du bouton selon vos préférences */
-    border: none;
+    border-color: #007BFF;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 15px;
     border-radius: 5px;
+    min-height: 2em;
 }

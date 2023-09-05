@@ -2,12 +2,26 @@
 let input = document.querySelector('#prix')
 let error = document.querySelector('small')
 let formulaire = document.querySelector('#formulaire')
+let amin = document.querySelector('span')
+// test perso
+amin.onclick = () =>{
+    let promptamin = "AMIN LE BOSS"
+    let promptautre
+    do {
+        promptautre = prompt('Si tu veux rejouer écris "AMIN LE BOSS"')
+    } while (promptautre != promptamin);
+    
+    location.href="https://houssni-amin.github.io/Juste-prix/"
+}
 
 // Etape 2 - Cacher l'erreur
 error.style.display = 'none'
 
+//nombre max
+let nombremax = 11 
+
 // Etape 3 - Générer un nombre aléatoire
-let nombreAleatoire = Math.floor(Math.random() * 1001)
+let nombreAleatoire = Math.floor(Math.random() * nombremax)
 let coup = 0
 let nombreChoisi
 
@@ -22,13 +36,13 @@ function verifier(nombre) {
         instructuion.textContent = `#${coup} (${nombre}) C'est moins !`
         instructuion.className = 'instruction moins'
     }else{
-        instructuion.textContent = `#${coup} (${nombre}) Félicitation vous avez trouvé le juste prix !`
+        instructuion.textContent = `#${coup} (${nombre}) Félicitation vous avez trouvé le juste prix ! Si tu veux rejouer clique sur #Amin !!!`
         instructuion.className = 'instruction fini'
         input.disabled = true
     }
     document.querySelector('#instructions').prepend(instructuion)
-
 }
+
 // Etape 4 - Vérifier que l'utilisateur donne bien un nombre
 input.addEventListener('keyup', () => {
     if (isNaN(input.value)) {

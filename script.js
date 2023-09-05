@@ -18,7 +18,7 @@ amin.onclick = () =>{
 error.style.display = 'none'
 
 //nombre max
-let nombremax = 11 
+let nombremax = 1001
 
 // Etape 3 - Générer un nombre aléatoire
 let nombreAleatoire = Math.floor(Math.random() * nombremax)
